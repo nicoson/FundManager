@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Xiaohui's Technology Center</title>
+	<!-- css library -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<!-- <link rel="stylesheet" href="style/style.css"> -->
+	
+	<!-- framework & library -->
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.3.14/angular-route.min.js"></script>
+	
+	<!-- customer css file -->
+	<link rel="stylesheet" href="stylesheets/common.css">
+	<link rel="stylesheet" href="stylesheets/homepage.css">
+	<link rel="stylesheet" href="stylesheets/content.css">
+	
+	<!-- customer js file -->
+	<script src="javascripts/ng-index.js"></script>
+</head>
+
+<body ng-app = "indexModule">
+	<header>
+		<h1>Fund Manager</h1>
+		<h4>A simple way to manage your funds</h4>
+		<br />
+	</header>
+	
+<!-- 	<nav class="navbar" ng-controller="homepageCtrl">
+		<a href="#/homepage">
+			<h5>Home</h5>
+		</a>
+		<div class="nav-unit" term="term" ng-repeat="term in terms">
+			<h5>{{term.name}}</h5>
+		</div>
+	</nav>
+
+
+	<section>
+		<div ng-view></div>
+	</section> -->
+
+	<section>
+		<form method="post" action="page-one">
+			<input type="text" name="testword" placeholder="please input your number" />
+			<input type="submit" value="submit">
+		</form>
+
+		<h3><%= data %></h3>
+	</section>
+
+	<footer>
+		<hr />
+		<br>
+		<p>Copy Right by @Xiaohui Ni</p>
+	</footer>
+</body>
 </html>
